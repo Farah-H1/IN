@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button,  StyleSheet, Text,TextInput, View } from 'react-native';
- import testimg  from '../assets/see.jpg';
+ import testimg  from '../assets/boxed.jpg';
 export default function App() {
   return (
     <View style={styles.container}>
