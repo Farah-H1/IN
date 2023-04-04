@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button,  StyleSheet, Text,TextInput, View } from 'react-native';
-import testimg  from '../assets/boxed.jpg';
+import testimg  from '../assets/sat.jpg';
 export default function App() {
   return (
     <View style={styles.container}>
-       <ImageBackground source={testimg} style = {styles.backgroundimage}>
+       {/* <ImageBackground source={testimg} style = {styles.backgroundimage}>
 
       <Text style = {styles.title} >Sign Up</Text>
-      </ImageBackground>
+      </ImageBackground> */}
        
   <TextInput
   style ={styles.input}
@@ -36,11 +36,16 @@ const styles = StyleSheet.create({
     marginBottom:10,
     
   },
-  backgroundimage:{
-width:200,
-height:200,
-alignItems: 'center',
-justifyContent: 'center',
+  input:{
+    width:'100%',
+    height:50,
+ },
+//   backgroundimage:{
+// width:50,
+// height:50,
+// alignItems: 'center',
+// justifyContent: 'center',
 
-  }
+//   }
 });
+

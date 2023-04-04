@@ -1,9 +1,15 @@
-import { Button,  StyleSheet, Text,TextInput, View } from 'react-native';
-
+import { Button,  StyleSheet, Text,  View } from 'react-native';
+//import testimg from '../assets/sat.jpg';
 export default function HomeScreen ({navigation}) {
 return (
     <View  style = {styles.container}>
-    <Text style = {styles.title}> Home</Text>
+
+      {/* <ImageBackground source={testimg} style = {styles.backgroundimage}>
+
+     
+     </ImageBackground>  */}
+
+<Text style = {styles.title}> Home</Text>
     <View style = {styles.buttonCotainer}>
         <Button
         title = 'Sign in'
@@ -13,7 +19,9 @@ return (
         onPress = {() => navigation.navigate('SignUp')} />
     
     </View>
+   
     </View>
+    
 );}
 
 const styles = StyleSheet.create({
@@ -24,15 +32,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonCotainer:{
-width:'100%',
-height:50,
-marginBottom:10,
+width:'50%',
+height:70,
+marginBottom:1,
 borderWidth:1,
   },
   title:{
-    fontSize: 24,
+    fontSize: 28,
     fontweight:'bold',
-    marginBottom:10,
+    marginBottom:2,
     
   },
+//     backgroundimage:{
+// width:50,
+// height:50,
+// alignItems: 'center',
+// justifyContent: 'center',
+
+//   },
 });
